@@ -1,4 +1,115 @@
-header{
-    background-color: blue;
+@keyframes bounce {
+    0%, 20%, 60%, 100%,{
+        -webkit-tranform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-tranform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-tranform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+header {
+    text-align: center;
+    color: #04324c;
+    display: block;
     
+}
+
+body {
+    background: rgb(99, 122, 89);
+    color: #333;
+    font-family: Lato, sans-serif;
+}
+.addList {
+    color: #98b5c5;
+    display: block;
+    width: 400px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+input, button {
+    outline: none;
+}
+button {
+    padding: .3em 1em;
+    border-radius: 100px 100px 100px 100px;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+    clear: both;
+    margin: 5px 0px;
+    
+}
+button:hover {
+    animation: bounce 1s;
+    color: #333;
+}
+input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+input:focus {
+    color: #333;
+}
+  
+label{
+    display: block;
+    margin: 0 0 20px;
+}
+  
+li {
+    display: flex;
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li > label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+}
+
+img{
+    max-width: 25px;
+}
+
+img:hover{
+    
+    transform: skew(-10deg);
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:99%;
+    font-size: 20px;
 }

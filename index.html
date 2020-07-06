@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
-    <h1>Vamos Começar</h1>
+    <h1>Desafio Estrelsas</h1>
+    <p>Eu não sou muito bom em CSS, mas me esforcei bastante!</p>
+    <p>A página salva os itens da lista, mesmo apos atualizada.</p>
 </header>
 <body>
-    <div id="app">
+    <div id="app" class="addList">
+        <h2>Minha Lista</h2>        
+        <input type="text" placeholder="Digite um Item . . .">
+        <button type="button" class="efeito">Adicionar</button>
         <ul></ul>
-        <input type="text" placeholder="Digite um todo">
-        <button>Adicionar</button>
     </div>
 
-    <script src="todos.js"></script>
+    <script src="script.js"></script>
+
+    <footer>
+        <a href="https://github.com/murdock18" target="_blank">
+            <img src="https://image.flaticon.com/icons/svg/25/25231.svg"
+                 alt="github">  https://github.com/murdock18
+        </a>
+    </footer>
+
 </body>
 </html>
